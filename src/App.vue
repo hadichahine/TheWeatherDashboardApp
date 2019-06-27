@@ -27,6 +27,24 @@
 </script>
 
 <style>
+	@font-face {
+		font-family: avenir;
+		font-weight: bold;
+		src: url('/fonts/AvenirNext-DemiBold.ttf');
+	}
+
+	@font-face {
+		font-family: avenir;
+		font-weight: normal;
+		src: url('/fonts/AvenirNext-Regular.ttf');
+	}
+
+	@font-face {
+		font-family: avenir;
+		font-weight: 500;
+		src: url('/fonts/AvenirNext-Medium.ttf');
+	}
+
 	html {
 		background-color: #101f3e;
 		font-family: avenir;
