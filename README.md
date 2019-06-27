@@ -5,5 +5,12 @@ Another reason is that I'd like to formulate the best build setup I'd use given 
 
 **WORK IN PROGRESS**
 
+## Pending Features
+- Precipitation (shown values are dummies)
+- Change settings
+- Support multiple screens (This should be a matter of adding a couple of css media queries)
+- Set city based on current location
+- Connection problems (api retrieval) feedback
+
 ## Screenshot as of 27th of June 2019
 ![The Weather Dashboard](/screenshots/screenshot_june_27_2019.png?raw=true "The Weather Dashboard")
