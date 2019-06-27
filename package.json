@@ -1,7 +1,6 @@
 {
   "name": "test-single-vue",
   "description": "A Vue.js project",
-  "version": "1.0.0",
   "author": "Hadi Chahine <hadichahine232@hotmail.com>",
   "license": "MIT",
   "private": true,
