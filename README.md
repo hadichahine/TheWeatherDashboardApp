@@ -3,5 +3,7 @@ The reason I'm writing this application is to discover the best practices I coul
 
 Another reason is that I'd like to formulate the best build setup I'd use given that I'm obliged to use webpack since vue-loader is a webpack plugin.
 
+**WORK IN PROGRESS**
+
 ## Screenshot as of 27th of June 2019
 ![The Weather Dashboard](/screenshots/screenshot_june_27_2019.png?raw=true "The Weather Dashboard")
