@@ -34,7 +34,7 @@
 					:humidity='Math.round(currentWeatherModel.basicWeatherInfo().humidity)+"%"'
 					:wind-speed="Math.round(currentWeatherModel.basicWeatherInfo().wind_speed) + 'm/s'"
 				/>
-				<day-weather-forecast v-for='one in dayForecastModel.getDailyForecast()'
+				<day-weather-forecast v-for='one in dayForecastModel.getDailyForecaseForFirstN(4)'
 					:card-title='one.day'
 					:weather-condition='one.condition'
 					:temp-high='Math.round(one.highTemperature)'

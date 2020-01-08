@@ -14,9 +14,12 @@ export default {
 				highTemperature: dailyForecast.highTemperature(),
 				lowTemperature: dailyForecast.lowTemperature(),
 				condition: dailyForecast.condition()
-		        }
+		    }
 		})
 		this.inform();
+	},
+	getDailyForecaseForFirstN(count){
+		return this.forecastsForEachComingDay.slice(0, count);
 	},
 	getDailyForecast(){
 		return this.forecastsForEachComingDay;
