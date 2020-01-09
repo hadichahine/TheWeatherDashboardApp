@@ -203,6 +203,7 @@ export default {
 .dashboard-main .dashboard-content .dashboard-content-grid {
 	display: grid;
 	height: var(--dashboard-content-height);
+	width: 100%;
 	grid-template-columns: repeat(6,1fr);
 	grid-template-rows: repeat(2,1fr);
 	grid-gap: var(--dashboard-content-gap-value);
