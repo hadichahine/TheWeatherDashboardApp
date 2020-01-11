@@ -7,7 +7,7 @@ import HourForecastModel from 'AppModels/HourForecastModel.js'
 
 import WeatherApi from './OpenWeatherApiAdapter.js'
 
-function tabulateHourlyWeatherRecordsIntoDailyForecast(hourlyRecords){
+function tabulateHourlyWeatherRecordsIntoDailyForecastMatrix(hourlyRecords){
 	let currentIndex = -1
 	let currentDay
 	let array = []
@@ -41,10 +41,7 @@ export default {
 		WeatherApi.retrieveWeatherTemperatureAndConditionForNextHours(WeatherConfiguration.city,WeatherConfiguration.unitFamily,30)
 		.then((result) => {
 			DayForecastModel.updateDailyWeatherForecast(
-				tabulateHourlyWeatherRecordsIntoDailyForecast(result)
-				.map((hourlyForecastForOneDay) => {
-					return new DailyForecast(hourlyForecastForOneDay)
-				})
+				tabulateHourlyWeatherRecordsIntoDailyForecastMatrix(result)
 			)
 		})
 	}
