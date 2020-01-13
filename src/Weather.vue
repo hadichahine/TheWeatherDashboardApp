@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import AppInteractor from './AppInteractor.js'
+import AppModel from './AppModel.js'
 
 import CurrentWeatherConditionCard from './CurrentWeatherConditionCard.vue'
 import CenteredFlexView from './CenteredFlexView.vue'
@@ -95,7 +95,7 @@ export default {
 			else return hours + ":00";
 		},
 		refreshAllWeatherStats(){
-			AppInteractor.refresh()
+			AppModel.refresh()
 		}
 	}
 }

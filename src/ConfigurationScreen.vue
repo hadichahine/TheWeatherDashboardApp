@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import AppInteractor from './AppInteractor.js';
+import AppModel from './AppModel.js';
 import ToggleView from './ToggleView.vue';
 
 let unitToFamilyMap = {
@@ -38,7 +38,7 @@ export default {
   },
   methods: {
 	changeCityForCurrentWeatherModel(){
-		AppInteractor.assignCityAndUnitFamily(this.city,unitToFamilyMap[this.unit]);
+		AppModel.assignCityAndUnitFamily(this.city,unitToFamilyMap[this.unit]);
 	},
 	unitOptionChanged(newOption){
 		this.unit = newOption;
