@@ -43,7 +43,8 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
        WeatherConditionArt: path.resolve(__dirname, 'src/assets/icons'),
-       AppModels: path.resolve(__dirname,'src/models')
+       AppModels: path.resolve(__dirname,'src/models'),
+       Entities: path.resolve(__dirname,'src/entities')
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
