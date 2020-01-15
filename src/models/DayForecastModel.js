@@ -1,5 +1,5 @@
 import createObservable from './Observable.js'
-import DailyForecast from '../DailyForecast.js'
+import DailyForecast from 'Entities/DailyForecastEntity.js'
 
 function retrieveDayNameByDate(date){
 	return Intl.DateTimeFormat('en-US', { weekday: 'long' }).format(date)
