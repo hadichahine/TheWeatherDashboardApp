@@ -1,9 +1,9 @@
 let apiKey = '0ca9d040ff56e1b286a929f6c5dd3f19';
 import WeatherInfoEnum from './WeatherInfoEnum.js'
 
-function convertWeatherInfoToCondition(weatherConditionAccordingToOpenWeatherApi){
-	if(WeatherInfoEnum.hasOwnProperty(weatherConditionAccordingToOpenWeatherApi.toUpperCase()))
-		return WeatherInfoEnum[weatherConditionAccordingToOpenWeatherApi.toUpperCase()]
+function convertWeatherInfoToCondition(openWeatherMapWeatherCondition){
+	if(WeatherInfoEnum.hasOwnProperty(openWeatherMapWeatherCondition.toUpperCase()))
+		return WeatherInfoEnum[openWeatherMapWeatherCondition.toUpperCase()]
 	else return WeatherInfoEnum.UNKNOWN
 }
 
