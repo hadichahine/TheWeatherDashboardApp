@@ -149,19 +149,22 @@ export default {
 }
 
 .dashboard-main .branding {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-}
-
-.dashboard-main .branding *{
-	display: inline-block;
-	vertical-align: middle;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	height: 100%;
 }
 
 .dashboard-main .branding .emblem-image-wrapper {
-	max-height: 100%;
+	flex: auto;
+	display: flex;
+	justify-content: flex-end;
 	margin-right: 10px;
+}
+
+.dashboard-main .branding .emblem-image-wrapper img {
+	display: block;
+	text-align: right;
 }
 
 .dashboard-main .branding .brand-name-wrapper span {
